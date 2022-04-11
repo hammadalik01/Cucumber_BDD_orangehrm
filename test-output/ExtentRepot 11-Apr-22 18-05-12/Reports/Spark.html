@@ -1,0 +1,1446 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Apr 11, 2022 06:05:12 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Login Action</p>
+            <p class="text-sm">
+              <span>6:05:13 PM</span> / <span>00:00:09:809</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Login Action</h5>
+<span class='badge badge-success'>04.11.2022 6:05:13 PM</span>
+<span class='badge badge-danger'>04.11.2022 6:05:23 PM</span>
+<span class='badge badge-default'>00:00:09:809</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>validation message show when  User forget to enter password in login page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.LoginPageStepDefination.i_launch_application_and_on_login_page()">
+                <span>Given I launch application and on login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.LoginPageStepDefination.User_only_enter_username_but_forget_to_enter_password()">
+                <span>When User only enter username but forget to enter password</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.LoginPageStepDefination.user_click_submit_button()">
+                <span>And User click submit button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.LoginPageStepDefination.message_display_password_cannot_be_empty_on_login_page()">
+                <span>Then Message display Password cannot be empty on login page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Custom form Action</p>
+            <p class="text-sm">
+              <span>6:05:13 PM</span> / <span>00:00:34:581</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Custom form Action</h5>
+<span class='badge badge-success'>04.11.2022 6:05:13 PM</span>
+<span class='badge badge-danger'>04.11.2022 6:05:47 PM</span>
+<span class='badge badge-default'>00:00:34:581</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="4"><span class="badge log fail-bg mr-2">Fail</span>Edit custom field Successfully</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.LoginPageStepDefination.i_launch_application_and_on_login_page()">
+                <span>Given I launch application and on login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.LoginPageStepDefination.user_login_with_following_credentials_details(io.cucumber.datatable.DataTable)">
+                <span>When User login with following credentials details</span>
+      <div><table class='markup-table table '><tr><td>Admin</td><td>admin123</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.LoginPageStepDefination.user_click_submit_button()">
+                <span>And User click submit button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.CustomPageStepDefination.user_hover_on_pim_to_see_all_menu_option()">
+                <span>And user hover on PIM to see all menu option</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.CustomPageStepDefination.go_to_custom_field()">
+                <span>And Go to custom field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.CustomPageStepDefination.user_is_on_custom_field_page()">
+                <span>Given User is on custom field page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.bddcucumberframework.stepDefinations.CustomPageStepDefination.edit_the_data_and_save_it()">
+                <span>When Edit the data and save it</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'First Custom Field')]"}
+  (Session info: chrome=100.0.4896.75)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-QV9D7PSP', ip: '10.10.10.219', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\onoff\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54546}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ef52ae065d43e73351f1686e29a397d1
+*** Element info: {Using=xpath, value=//a[contains(text(),'First Custom Field')]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.bddcucumberframework.pagesObject.CustomPage.EditCustomField(CustomPage.java:106)
+	at com.bddcucumberframework.stepDefinations.CustomPageStepDefination.edit_the_data_and_save_it(CustomPageStepDefination.java:96)
+	at ✽.Edit the data and save it(file:///D:/Cucumber_project/Demo-Orange-hrm/src/test/java/features/custom.feature:26)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.bddcucumberframework.stepDefinations.Hooks.screenshots(io.cucumber.java.Scenario)</span>
+      <div>screenshot name
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./screenshots/embedded6.png' src="./screenshots/embedded6.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.bddcucumberframework.stepDefinations.CustomPageStepDefination.data_save_successfully_and_message_show_successfully_saved()">
+                <span>Then Data save successfully and message show Successfully Saved</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="7"><span class="badge log fail-bg mr-2">Fail</span>Delete custom field record Successfully</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.LoginPageStepDefination.i_launch_application_and_on_login_page()">
+                <span>Given I launch application and on login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.LoginPageStepDefination.user_login_with_following_credentials_details(io.cucumber.datatable.DataTable)">
+                <span>When User login with following credentials details</span>
+      <div><table class='markup-table table '><tr><td>Admin</td><td>admin123</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.LoginPageStepDefination.user_click_submit_button()">
+                <span>And User click submit button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.CustomPageStepDefination.user_hover_on_pim_to_see_all_menu_option()">
+                <span>And user hover on PIM to see all menu option</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.CustomPageStepDefination.go_to_custom_field()">
+                <span>And Go to custom field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.CustomPageStepDefination.user_is_on_custom_field_page()">
+                <span>Given User is on custom field page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.bddcucumberframework.stepDefinations.CustomPageStepDefination.select_the_a_record_and_delete_it()">
+                <span>When Select the a record and Delete it</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='First Custom FieldEdit']//parent::td[@class='fieldName']//preceding-sibling::td[@class='check']//input[@type='checkbox']"}
+  (Session info: chrome=100.0.4896.75)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-QV9D7PSP', ip: '10.10.10.219', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\onoff\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54543}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bfef65e9b54c8688539c7eebb039cfac
+*** Element info: {Using=xpath, value=//a[text()='First Custom FieldEdit']//parent::td[@class='fieldName']//preceding-sibling::td[@class='check']//input[@type='checkbox']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.bddcucumberframework.pagesObject.CustomPage.SelectRecordAndDeleteIt(CustomPage.java:124)
+	at com.bddcucumberframework.stepDefinations.CustomPageStepDefination.select_the_a_record_and_delete_it(CustomPageStepDefination.java:105)
+	at ✽.Select the a record and Delete it(file:///D:/Cucumber_project/Demo-Orange-hrm/src/test/java/features/custom.feature:31)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.bddcucumberframework.stepDefinations.Hooks.screenshots(io.cucumber.java.Scenario)</span>
+      <div>screenshot name
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./screenshots/embedded4.png' src="./screenshots/embedded4.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.bddcucumberframework.stepDefinations.CustomPageStepDefination.successfully_record_deleted_with_message_show(java.lang.String)">
+                <span>Then successfully record deleted with message show "Successfully Deleted"</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Reporting Method</p>
+            <p class="text-sm">
+              <span>6:05:13 PM</span> / <span>00:00:34:089</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Reporting Method</h5>
+<span class='badge badge-success'>04.11.2022 6:05:13 PM</span>
+<span class='badge badge-danger'>04.11.2022 6:05:47 PM</span>
+<span class='badge badge-default'>00:00:34:089</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="6"><span class="badge log fail-bg mr-2">Fail</span>Delete Reporting Method Successfully</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.LoginPageStepDefination.i_launch_application_and_on_login_page()">
+                <span>Given I launch application and on login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.LoginPageStepDefination.user_login_with_following_credentials_details(io.cucumber.datatable.DataTable)">
+                <span>When User login with following credentials details</span>
+      <div><table class='markup-table table '><tr><td>Admin</td><td>admin123</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.LoginPageStepDefination.user_click_submit_button()">
+                <span>And User click submit button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.CustomPageStepDefination.user_hover_on_pim_to_see_all_menu_option()">
+                <span>And user hover on PIM to see all menu option</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.ReportingMethodPageStepDefination.go_to_reporting_method_page()">
+                <span>And Go to Reporting Method page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.ReportingMethodPageStepDefination.user_is_on_reporting_method_page()">
+                <span>Given User is on reporting method page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.bddcucumberframework.stepDefinations.ReportingMethodPageStepDefination.select_reporting_record_and_delete_it()">
+                <span>When Select reporting record and delete it</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Direction']//parent::td[@class='tdName tdValue']//preceding-sibling::td[@class='check']//input[@type='checkbox']"}
+  (Session info: chrome=100.0.4896.75)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-QV9D7PSP', ip: '10.10.10.219', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\onoff\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54556}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 461b5dc8e35a71cd3e293163fc3af2e9
+*** Element info: {Using=xpath, value=//a[text()='Direction']//parent::td[@class='tdName tdValue']//preceding-sibling::td[@class='check']//input[@type='checkbox']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.bddcucumberframework.pagesObject.ReportingMethodPage.deleteSelectedReportingMethod(ReportingMethodPage.java:61)
+	at com.bddcucumberframework.stepDefinations.ReportingMethodPageStepDefination.select_reporting_record_and_delete_it(ReportingMethodPageStepDefination.java:59)
+	at ✽.Select reporting record and delete it(file:///D:/Cucumber_project/Demo-Orange-hrm/src/test/java/features/reportingMethod.feature:19)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.bddcucumberframework.stepDefinations.Hooks.screenshots(io.cucumber.java.Scenario)</span>
+      <div>screenshot name
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./screenshots/embedded5.png' src="./screenshots/embedded5.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.bddcucumberframework.stepDefinations.CustomPageStepDefination.successfully_record_deleted_with_message_show(java.lang.String)">
+                <span>Then successfully record deleted with message show "Successfully Deleted"</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="8"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Add and Edit Employee</p>
+            <p class="text-sm">
+              <span>6:05:13 PM</span> / <span>00:00:35:149</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Add and Edit Employee</h5>
+<span class='badge badge-success'>04.11.2022 6:05:13 PM</span>
+<span class='badge badge-danger'>04.11.2022 6:05:48 PM</span>
+<span class='badge badge-default'>00:00:35:149</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="9"><span class="badge log fail-bg mr-2">Fail</span>Delete Employee Record successfully</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.LoginPageStepDefination.i_launch_application_and_on_login_page()">
+                <span>Given I launch application and on login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.LoginPageStepDefination.user_login_with_following_credentials_details(io.cucumber.datatable.DataTable)">
+                <span>When User login with following credentials details</span>
+      <div><table class='markup-table table '><tr><td>Admin</td><td>admin123</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.LoginPageStepDefination.user_click_submit_button()">
+                <span>And User click submit button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.AddEmployeePageStepDefination.user_on_pim_menu()">
+                <span>And User on PIM menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.EditEmployeePageStepDefination.user_go_to_edit_employee_menu()">
+                <span>And User go to Edit Employee menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.DeleteEmployeePageStepDefination.user_search_employee_by_employee_id_for_delete()">
+                <span>And User search employee by employee ID for Delete</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.DeleteEmployeePageStepDefination.user_on_employee_list()">
+                <span>Given User On employee List</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.bddcucumberframework.stepDefinations.DeleteEmployeePageStepDefination.user_delete_the_selected_record()">
+                <span>When User Delete the selected record</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=100.0.4896.75)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-QV9D7PSP', ip: '10.10.10.219', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\onoff\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54582}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4c7629ba13b20630ea0e784565aa732c
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.bddcucumberframework.pagesObject.DeleteEmployeePage.userDeleteRecord(DeleteEmployeePage.java:48)
+	at com.bddcucumberframework.stepDefinations.DeleteEmployeePageStepDefination.user_delete_the_selected_record(DeleteEmployeePageStepDefination.java:49)
+	at ✽.User Delete the selected record(file:///D:/Cucumber_project/Demo-Orange-hrm/src/test/java/features/DeleteEmployees.feature:16)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.bddcucumberframework.stepDefinations.Hooks.screenshots(io.cucumber.java.Scenario)</span>
+      <div>screenshot name
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./screenshots/embedded8.png' src="./screenshots/embedded8.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.bddcucumberframework.stepDefinations.DeleteEmployeePageStepDefination.record_deleted_successfully()">
+                <span>Then Record Deleted Successfully</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="10"><span class="badge log fail-bg mr-2">Fail</span>Check user Attached file successfully in employee personal section</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.LoginPageStepDefination.i_launch_application_and_on_login_page()">
+                <span>Given I launch application and on login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.LoginPageStepDefination.user_login_with_following_credentials_details(io.cucumber.datatable.DataTable)">
+                <span>When User login with following credentials details</span>
+      <div><table class='markup-table table '><tr><td>Admin</td><td>admin123</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.LoginPageStepDefination.user_click_submit_button()">
+                <span>And User click submit button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.AddEmployeePageStepDefination.user_on_pim_menu()">
+                <span>And User on PIM menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.EditEmployeePageStepDefination.user_go_to_edit_employee_menu()">
+                <span>And User go to Edit Employee menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.bddcucumberframework.stepDefinations.EditEmployeePageStepDefination.user_search_employee_by_employee_id()">
+                <span>And User search employee by employee ID</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'1')]"}
+  (Session info: chrome=100.0.4896.75)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-QV9D7PSP', ip: '10.10.10.219', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\onoff\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54547}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d597ea6bdc6982dd3a9736aa0492c322
+*** Element info: {Using=xpath, value=//a[contains(text(),'1')]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.bddcucumberframework.pagesObject.EditEmployeePage.searchEmployeeByIDAndGoToThatEmployee(EditEmployeePage.java:47)
+	at com.bddcucumberframework.stepDefinations.EditEmployeePageStepDefination.user_search_employee_by_employee_id(EditEmployeePageStepDefination.java:40)
+	at ✽.User search employee by employee ID(file:///D:/Cucumber_project/Demo-Orange-hrm/src/test/java/features/EditEmployees.feature:10)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.bddcucumberframework.stepDefinations.Hooks.screenshots(io.cucumber.java.Scenario)</span>
+      <div>screenshot name
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./screenshots/embedded7.png' src="./screenshots/embedded7.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.bddcucumberframework.stepDefinations.EditEmployeePageStepDefination.user_on_personal_page()">
+                <span>Given User On personal page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.bddcucumberframework.stepDefinations.EmployeePersonalDetailsPageStepDefination.user_browse_a_file_and_upload_it()">
+                <span>When User browse a file and upload it</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.bddcucumberframework.stepDefinations.EmployeePersonalDetailsPageStepDefination.file_upload_successfully_with_message()">
+                <span>Then file upload successfully with message</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="11"><span class="badge log fail-bg mr-2">Fail</span>Check user upload profile image successfully in personal section</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.LoginPageStepDefination.i_launch_application_and_on_login_page()">
+                <span>Given I launch application and on login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.LoginPageStepDefination.user_login_with_following_credentials_details(io.cucumber.datatable.DataTable)">
+                <span>When User login with following credentials details</span>
+      <div><table class='markup-table table '><tr><td>Admin</td><td>admin123</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.LoginPageStepDefination.user_click_submit_button()">
+                <span>And User click submit button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.AddEmployeePageStepDefination.user_on_pim_menu()">
+                <span>And User on PIM menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.EditEmployeePageStepDefination.user_go_to_edit_employee_menu()">
+                <span>And User go to Edit Employee menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.bddcucumberframework.stepDefinations.EditEmployeePageStepDefination.user_search_employee_by_employee_id()">
+                <span>And User search employee by employee ID</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'1')]"}
+  (Session info: chrome=100.0.4896.75)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-QV9D7PSP', ip: '10.10.10.219', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\onoff\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54551}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 997de6d0155d9d34dbac15687a6bfb69
+*** Element info: {Using=xpath, value=//a[contains(text(),'1')]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.bddcucumberframework.pagesObject.EditEmployeePage.searchEmployeeByIDAndGoToThatEmployee(EditEmployeePage.java:47)
+	at com.bddcucumberframework.stepDefinations.EditEmployeePageStepDefination.user_search_employee_by_employee_id(EditEmployeePageStepDefination.java:40)
+	at ✽.User search employee by employee ID(file:///D:/Cucumber_project/Demo-Orange-hrm/src/test/java/features/EditEmployees.feature:10)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.bddcucumberframework.stepDefinations.Hooks.screenshots(io.cucumber.java.Scenario)</span>
+      <div>screenshot name
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./screenshots/embedded9.png' src="./screenshots/embedded9.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.bddcucumberframework.stepDefinations.EditEmployeePageStepDefination.user_on_personal_page()">
+                <span>Given User On personal page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.bddcucumberframework.stepDefinations.EmployeePersonalDetailsPageStepDefination.user_upload_profile_picture()">
+                <span>When User upload profile picture</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.bddcucumberframework.stepDefinations.EmployeePersonalDetailsPageStepDefination.profile_picture_upload_successfully()">
+                <span>Then profile picture upload successfully</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="12"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Add User Action</p>
+            <p class="text-sm">
+              <span>6:05:13 PM</span> / <span>00:00:30:576</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Add User Action</h5>
+<span class='badge badge-success'>04.11.2022 6:05:13 PM</span>
+<span class='badge badge-danger'>04.11.2022 6:05:43 PM</span>
+<span class='badge badge-default'>00:00:30:576</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="13"><span class="badge log fail-bg mr-2">Fail</span>Edit user record which is recently added</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.LoginPageStepDefination.i_launch_application_and_on_login_page()">
+                <span>Given I launch application and on login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.LoginPageStepDefination.user_login_with_following_credentials_details(io.cucumber.datatable.DataTable)">
+                <span>When User login with following credentials details</span>
+      <div><table class='markup-table table '><tr><td>Admin</td><td>admin123</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.LoginPageStepDefination.user_click_submit_button()">
+                <span>And User click submit button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.DashboardPageStepDefination.user_go_to_system_users_section_by_click_on_users_menu()">
+                <span>And user go to system users section by click on Users menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.SystemUserPageStepDefination.user_is_on_system_page()">
+                <span>Given User is on system page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.bddcucumberframework.stepDefinations.SystemUserPageStepDefination.i_enter_username_and_click_on_search_button()">
+                <span>When I enter username and click on search button</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+	at com.bddcucumberframework.pagesObject.SystemUserPage.enterUserInSearchFieldAndClickOnSearchButton(SystemUserPage.java:50)
+	at com.bddcucumberframework.stepDefinations.SystemUserPageStepDefination.i_enter_username_and_click_on_search_button(SystemUserPageStepDefination.java:56)
+	at ✽.I enter username and click on search button(file:///D:/Cucumber_project/Demo-Orange-hrm/src/test/java/features/systemUser.feature:53)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.bddcucumberframework.stepDefinations.Hooks.screenshots(io.cucumber.java.Scenario)</span>
+      <div>screenshot name
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./screenshots/embedded2.png' src="./screenshots/embedded2.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.bddcucumberframework.stepDefinations.SystemUserPageStepDefination.i_click_on_appear_record()">
+                <span>And I click on appear record</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.bddcucumberframework.stepDefinations.EditUserPageStepDefination.i_go_to_edit_user_section_and_edit_some_information()">
+                <span>And I go to Edit user section and edit some information</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.bddcucumberframework.stepDefinations.EditUserPageStepDefination.save_the_record_by_click_on_save_button()">
+                <span>And save the record by click on Save Button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.bddcucumberframework.stepDefinations.SystemUserPageStepDefination.record_updated_and_successfully_message_show()">
+                <span>Then Record Updated and Successfully message show</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="14"><span class="badge log fail-bg mr-2">Fail</span>Delete user record which is Edit recently</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.LoginPageStepDefination.i_launch_application_and_on_login_page()">
+                <span>Given I launch application and on login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.LoginPageStepDefination.user_login_with_following_credentials_details(io.cucumber.datatable.DataTable)">
+                <span>When User login with following credentials details</span>
+      <div><table class='markup-table table '><tr><td>Admin</td><td>admin123</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.LoginPageStepDefination.user_click_submit_button()">
+                <span>And User click submit button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.DashboardPageStepDefination.user_go_to_system_users_section_by_click_on_users_menu()">
+                <span>And user go to system users section by click on Users menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.SystemUserPageStepDefination.user_is_on_system_page()">
+                <span>Given User is on system page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.SystemUserPageStepDefination.i_enter_username_into_system_user_page_and_click_on_search_button()">
+                <span>When I enter username into system user page and click on search button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.SystemUserPageStepDefination.i_select_a_record_which_need_to_be_delete()">
+                <span>And I select a record which need to be delete</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.bddcucumberframework.stepDefinations.SystemUserPageStepDefination.i_cancel_the_popup_for_delete_the_record()">
+                <span>And I cancel the popup for delete the record</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: WebElement is NOT visible, Exception: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (23deef06ebe7ccb651d7432116ce32cd)] -> xpath: //parent::div[@id='deleteConfModal']//parent::div[@class='modal-footer']//input[@type='button' and @value='Cancel']] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-QV9D7PSP', ip: '10.10.10.219', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\onoff\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54544}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 23deef06ebe7ccb651d7432116ce32cd
+	at org.testng.Assert.fail(Assert.java:99)
+	at com.bddcucumberframework.pagesObject.HelperPage.WaitUntilWebElementIsVisible(HelperPage.java:245)
+	at com.bddcucumberframework.pagesObject.SystemUserPage.CancelDeletedPopup(SystemUserPage.java:87)
+	at com.bddcucumberframework.stepDefinations.SystemUserPageStepDefination.i_cancel_the_popup_for_delete_the_record(SystemUserPageStepDefination.java:111)
+	at ✽.I cancel the popup for delete the record(file:///D:/Cucumber_project/Demo-Orange-hrm/src/test/java/features/systemUser.feature:63)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.bddcucumberframework.stepDefinations.Hooks.screenshots(io.cucumber.java.Scenario)</span>
+      <div>screenshot name
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./screenshots/embedded3.png' src="./screenshots/embedded3.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.bddcucumberframework.stepDefinations.SystemUserPageStepDefination.i_delete_the_record_from_table()">
+                <span>And I delete the record from table</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.bddcucumberframework.stepDefinations.SystemUserPageStepDefination.deleted_record_successfully_message_show()">
+                <span>Then deleted record successfully message show</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.bddcucumberframework.stepDefinations.SystemUserPageStepDefination.Deleted_record_not_found()">
+                <span>And Deleted record not found</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="19"><span class="badge log fail-bg mr-2">Fail</span>search a user which is added successfully</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.LoginPageStepDefination.i_launch_application_and_on_login_page()">
+                <span>Given I launch application and on login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.LoginPageStepDefination.user_login_with_following_credentials_details(io.cucumber.datatable.DataTable)">
+                <span>When User login with following credentials details</span>
+      <div><table class='markup-table table '><tr><td>Admin</td><td>admin123</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.LoginPageStepDefination.user_click_submit_button()">
+                <span>And User click submit button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.DashboardPageStepDefination.user_go_to_system_users_section_by_click_on_users_menu()">
+                <span>And user go to system users section by click on Users menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.bddcucumberframework.stepDefinations.SystemUserPageStepDefination.user_is_on_system_page()">
+                <span>Given User is on system page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.bddcucumberframework.stepDefinations.SystemUserPageStepDefination.i_enter_username_and_click_on_search_button()">
+                <span>When I enter username and click on search button</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+	at com.bddcucumberframework.pagesObject.SystemUserPage.enterUserInSearchFieldAndClickOnSearchButton(SystemUserPage.java:50)
+	at com.bddcucumberframework.stepDefinations.SystemUserPageStepDefination.i_enter_username_and_click_on_search_button(SystemUserPageStepDefination.java:56)
+	at ✽.I enter username and click on search button(file:///D:/Cucumber_project/Demo-Orange-hrm/src/test/java/features/systemUser.feature:48)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.bddcucumberframework.stepDefinations.Hooks.screenshots(io.cucumber.java.Scenario)</span>
+      <div>screenshot name
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./screenshots/embedded1.png' src="./screenshots/embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.bddcucumberframework.stepDefinations.SystemUserPageStepDefination.added_user_show_in_the_record()">
+                <span>Then added user show in the record</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">4</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">java.lang.IllegalArgumentException</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.IllegalArgumentException</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:05:26 PM</td>
+<td>
+<a href="#" class="linked" test-id='12' id='117'>When I enter username and click on search button</a>
+<div class="">
+<span class="badge badge-default">Add User Action.search a user which is added successfully.When I enter username and click on search button</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:05:26 PM</td>
+<td>
+<a href="#" class="linked" test-id='12' id='126'>When I enter username and click on search button</a>
+<div class="">
+<span class="badge badge-default">Add User Action.Edit user record which is recently added.When I enter username and click on search button</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:05:27 PM</td>
+<td>
+<a href="#" class="linked" test-id='12' id='151'>And I cancel the popup for delete the record</a>
+<div class="">
+<span class="badge badge-default">Add User Action.Delete user record which is Edit recently.And I cancel the popup for delete the record</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.ElementNotInteractableException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.ElementNotInteractableException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:05:27 PM</td>
+<td>
+<a href="#" class="linked" test-id='8' id='147'>When User Delete the selected record</a>
+<div class="">
+<span class="badge badge-default">Add and Edit Employee.Delete Employee Record successfully.When User Delete the selected record</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>5</span>
+</span>
+<p class="name">org.openqa.selenium.NoSuchElementException</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.NoSuchElementException</h4>
+<span status="fail" class='badge log badge-danger'>5 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:05:26 PM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='103'>When Select the a record and Delete it</a>
+<div class="">
+<span class="badge badge-default">Custom form Action.Delete custom field record Successfully.When Select the a record and Delete it</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:05:26 PM</td>
+<td>
+<a href="#" class="linked" test-id='5' id='113'>When Select reporting record and delete it</a>
+<div class="">
+<span class="badge badge-default">Reporting Method.Delete Reporting Method Successfully.When Select reporting record and delete it</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:05:26 PM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='136'>When Edit the data and save it</a>
+<div class="">
+<span class="badge badge-default">Custom form Action.Edit custom field Successfully.When Edit the data and save it</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:05:26 PM</td>
+<td>
+<a href="#" class="linked" test-id='8' id='111'>And User search employee by employee ID</a>
+<div class="">
+<span class="badge badge-default">Add and Edit Employee.Check user Attached file successfully in employee personal section.And User search employee by employee ID</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:05:26 PM</td>
+<td>
+<a href="#" class="linked" test-id='8' id='128'>And User search employee by employee ID</a>
+<div class="">
+<span class="badge badge-default">Add and Edit Employee.Check user upload profile image successfully in personal section.And User search employee by employee ID</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Apr 11, 2022 06:05:12 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Apr 11, 2022 06:05:48 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>1</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>4</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='20%'>
+<b>1</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='80%'><b>4</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='10%'><b>1</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='90%'><b>9</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='70%'><b>65</b> steps passed</small></div>
+<div>
+<small data-tooltip='9%'><b>9</b> steps failed,
+<b>18</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Login Action":9.809,"Custom form Action":34.581,"Reporting Method":34.089,"Add and Edit Employee":35.149,"Add User Action":30.576
+};
+</script>
+<div class="row">
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 1,
+failParent: 4,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 1,
+failChild: 9,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 65,
+failGrandChild: 9,
+warningGrandChild: 0,
+skipGrandChild: 18,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
